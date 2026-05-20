@@ -41,6 +41,7 @@ async def root():
 @limiter.limit("10/minute")
 async def hello(request: Request):
     return {"msg": "hello world"}
+``` 
 
 
 ## Execution Result (Rate Limit)
@@ -72,7 +73,7 @@ This project uses the **Fixed Window Counter** rate limiting algorithm.
 The Fixed Window algorithm is simple, easy to implement, and efficient for basic rate limiting requirements.  
 It is suitable for this practice project because it clearly demonstrates request blocking behavior (HTTP 429).
 
-###Architecture
+### Architecture
 
   +----------------+
   |    Client      |
@@ -95,7 +96,7 @@ It is suitable for this practice project because it clearly demonstrates request
   +----------------+
   | Response Layer |
   | 200 or 429     |
-  +----------------+```
+  +----------------+
 
-## Limitation
+### Limitation
 Fixed Window may allow burst requests at the boundary of two windows (e.g., requests at 59s and 1s).
