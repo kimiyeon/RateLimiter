@@ -72,7 +72,7 @@ The Fixed Window algorithm is simple, easy to implement, and efficient for basic
 It is suitable for this practice project because it clearly demonstrates request blocking behavior (HTTP 429).
 
 ### Architecture
-
+```python
   +----------------+
   |    Client      |
   +--------+-------+
@@ -95,6 +95,7 @@ It is suitable for this practice project because it clearly demonstrates request
   | Response Layer |
   | 200 or 429     |
   +----------------+
+``` 
 
 ### Limitation
 Fixed Window may allow burst requests at the boundary of two windows (e.g., requests at 59s and 1s).
