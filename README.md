@@ -1,6 +1,6 @@
 # Rate Limiter 실습 1 (AI 주도 개발 방법론 기반)
 
-## 📌 개요
+## 개요
 
 이 리포지토리는 **AI 주도 개발 방법론**을 바탕으로 **Rate Limiter 구현 및 테스트** 한 실습 1이다.    
 FastAPI + SlowAPI를 사용하여 `/hello` API에 **Rate Limit(1분당 10회)**을 추가하고,  
@@ -8,9 +8,9 @@ FastAPI + SlowAPI를 사용하여 `/hello` API에 **Rate Limit(1분당 10회)**�
 
 ---
 
-## 🛠️ 1. 코드
+## 1. 코드
 
-### ✨ main.py
+### main.py
 
 ```python
 from fastapi import FastAPI, Request
